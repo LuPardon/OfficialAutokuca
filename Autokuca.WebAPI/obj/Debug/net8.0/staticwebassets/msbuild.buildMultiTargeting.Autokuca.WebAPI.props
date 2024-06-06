@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Autokuca.WebAPI.props" />
+</Project>

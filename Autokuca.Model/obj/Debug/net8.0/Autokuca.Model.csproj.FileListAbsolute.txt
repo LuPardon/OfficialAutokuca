@@ -1,0 +1,15 @@
+C:\Users\Lucija\source\repos\Autokuca\Autokuca.Model\bin\Debug\net8.0\Autokuca.Model.deps.json
+C:\Users\Lucija\source\repos\Autokuca\Autokuca.Model\bin\Debug\net8.0\Autokuca.Model.runtimeconfig.json
+C:\Users\Lucija\source\repos\Autokuca\Autokuca.Model\bin\Debug\net8.0\Autokuca.Model.dll
+C:\Users\Lucija\source\repos\Autokuca\Autokuca.Model\bin\Debug\net8.0\Autokuca.Model.pdb
+C:\Users\Lucija\source\repos\Autokuca\Autokuca.Model\obj\Debug\net8.0\Autokuca.Model.csproj.AssemblyReference.cache
+C:\Users\Lucija\source\repos\Autokuca\Autokuca.Model\obj\Debug\net8.0\Autokuca.Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lucija\source\repos\Autokuca\Autokuca.Model\obj\Debug\net8.0\Autokuca.Model.AssemblyInfoInputs.cache
+C:\Users\Lucija\source\repos\Autokuca\Autokuca.Model\obj\Debug\net8.0\Autokuca.Model.AssemblyInfo.cs
+C:\Users\Lucija\source\repos\Autokuca\Autokuca.Model\obj\Debug\net8.0\Autokuca.Model.csproj.CoreCompileInputs.cache
+C:\Users\Lucija\source\repos\Autokuca\Autokuca.Model\obj\Debug\net8.0\Autokuca.Model.sourcelink.json
+C:\Users\Lucija\source\repos\Autokuca\Autokuca.Model\obj\Debug\net8.0\Autokuca.Model.dll
+C:\Users\Lucija\source\repos\Autokuca\Autokuca.Model\obj\Debug\net8.0\refint\Autokuca.Model.dll
+C:\Users\Lucija\source\repos\Autokuca\Autokuca.Model\obj\Debug\net8.0\Autokuca.Model.pdb
+C:\Users\Lucija\source\repos\Autokuca\Autokuca.Model\obj\Debug\net8.0\Autokuca.Model.genruntimeconfig.cache
+C:\Users\Lucija\source\repos\Autokuca\Autokuca.Model\obj\Debug\net8.0\ref\Autokuca.Model.dll

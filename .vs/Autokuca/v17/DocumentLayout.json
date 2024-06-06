@@ -1,0 +1,139 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Lucija\\source\\repos\\Autokuca\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{76E182CD-B819-4863-90D8-A37AB37C8C30}|Autokuca.WebAPI\\Autokuca.WebAPI.csproj|c:\\users\\lucija\\source\\repos\\autokuca\\autokuca.webapi\\controllers\\vozilocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76E182CD-B819-4863-90D8-A37AB37C8C30}|Autokuca.WebAPI\\Autokuca.WebAPI.csproj|solutionrelative:autokuca.webapi\\controllers\\vozilocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76E182CD-B819-4863-90D8-A37AB37C8C30}|Autokuca.WebAPI\\Autokuca.WebAPI.csproj|c:\\users\\lucija\\source\\repos\\autokuca\\autokuca.webapi\\controllers\\saloncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76E182CD-B819-4863-90D8-A37AB37C8C30}|Autokuca.WebAPI\\Autokuca.WebAPI.csproj|solutionrelative:autokuca.webapi\\controllers\\saloncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76E182CD-B819-4863-90D8-A37AB37C8C30}|Autokuca.WebAPI\\Autokuca.WebAPI.csproj|c:\\users\\lucija\\source\\repos\\autokuca\\autokuca.webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{76E182CD-B819-4863-90D8-A37AB37C8C30}|Autokuca.WebAPI\\Autokuca.WebAPI.csproj|solutionrelative:autokuca.webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76E182CD-B819-4863-90D8-A37AB37C8C30}|Autokuca.WebAPI\\Autokuca.WebAPI.csproj|c:\\users\\lucija\\source\\repos\\autokuca\\autokuca.webapi\\migrations\\datacontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76E182CD-B819-4863-90D8-A37AB37C8C30}|Autokuca.WebAPI\\Autokuca.WebAPI.csproj|solutionrelative:autokuca.webapi\\migrations\\datacontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76E182CD-B819-4863-90D8-A37AB37C8C30}|Autokuca.WebAPI\\Autokuca.WebAPI.csproj|c:\\users\\lucija\\source\\repos\\autokuca\\autokuca.webapi\\migrations\\20240606163841_initialcreate.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76E182CD-B819-4863-90D8-A37AB37C8C30}|Autokuca.WebAPI\\Autokuca.WebAPI.csproj|solutionrelative:autokuca.webapi\\migrations\\20240606163841_initialcreate.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBD8BBAC-3D17-4BD1-995E-A0A15D46C254}|Autokuca.Repository\\Autokuca.Repository.csproj|c:\\users\\lucija\\source\\repos\\autokuca\\autokuca.repository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBD8BBAC-3D17-4BD1-995E-A0A15D46C254}|Autokuca.Repository\\Autokuca.Repository.csproj|solutionrelative:autokuca.repository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB624A5A-38A5-41F6-9B70-CA72F27FACA3}|Autokuca.DAL\\Autokuca.DAL.csproj|c:\\users\\lucija\\source\\repos\\autokuca\\autokuca.dal\\autokucacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB624A5A-38A5-41F6-9B70-CA72F27FACA3}|Autokuca.DAL\\Autokuca.DAL.csproj|solutionrelative:autokuca.dal\\autokucacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Lucija\\source\\repos\\Autokuca\\Autokuca.WebAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "Autokuca.WebAPI\\appsettings.json",
+              "ToolTip": "C:\\Users\\Lucija\\source\\repos\\Autokuca\\Autokuca.WebAPI\\appsettings.json",
+              "RelativeToolTip": "Autokuca.WebAPI\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-06T19:14:08.874Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DataContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\Lucija\\source\\repos\\Autokuca\\Autokuca.WebAPI\\Migrations\\DataContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "Autokuca.WebAPI\\Migrations\\DataContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\Lucija\\source\\repos\\Autokuca\\Autokuca.WebAPI\\Migrations\\DataContextModelSnapshot.cs",
+              "RelativeToolTip": "Autokuca.WebAPI\\Migrations\\DataContextModelSnapshot.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T19:09:51.43Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "20240606163841_InitialCreate.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Lucija\\source\\repos\\Autokuca\\Autokuca.WebAPI\\Migrations\\20240606163841_InitialCreate.Designer.cs",
+              "RelativeDocumentMoniker": "Autokuca.WebAPI\\Migrations\\20240606163841_InitialCreate.Designer.cs",
+              "ToolTip": "C:\\Users\\Lucija\\source\\repos\\Autokuca\\Autokuca.WebAPI\\Migrations\\20240606163841_InitialCreate.Designer.cs",
+              "RelativeToolTip": "Autokuca.WebAPI\\Migrations\\20240606163841_InitialCreate.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T19:09:27.33Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "VoziloController.cs",
+              "DocumentMoniker": "C:\\Users\\Lucija\\source\\repos\\Autokuca\\Autokuca.WebAPI\\Controllers\\VoziloController.cs",
+              "RelativeDocumentMoniker": "Autokuca.WebAPI\\Controllers\\VoziloController.cs",
+              "ToolTip": "C:\\Users\\Lucija\\source\\repos\\Autokuca\\Autokuca.WebAPI\\Controllers\\VoziloController.cs",
+              "RelativeToolTip": "Autokuca.WebAPI\\Controllers\\VoziloController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T18:57:58.413Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SalonController.cs",
+              "DocumentMoniker": "C:\\Users\\Lucija\\source\\repos\\Autokuca\\Autokuca.WebAPI\\Controllers\\SalonController.cs",
+              "RelativeDocumentMoniker": "Autokuca.WebAPI\\Controllers\\SalonController.cs",
+              "ToolTip": "C:\\Users\\Lucija\\source\\repos\\Autokuca\\Autokuca.WebAPI\\Controllers\\SalonController.cs",
+              "RelativeToolTip": "Autokuca.WebAPI\\Controllers\\SalonController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFQAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T18:57:03.118Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AutoKucaContext.cs",
+              "DocumentMoniker": "C:\\Users\\Lucija\\source\\repos\\Autokuca\\Autokuca.DAL\\AutoKucaContext.cs",
+              "RelativeDocumentMoniker": "Autokuca.DAL\\AutoKucaContext.cs",
+              "ToolTip": "C:\\Users\\Lucija\\source\\repos\\Autokuca\\Autokuca.DAL\\AutoKucaContext.cs",
+              "RelativeToolTip": "Autokuca.DAL\\AutoKucaContext.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAqwCcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T18:51:51.526Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "C:\\Users\\Lucija\\source\\repos\\Autokuca\\Autokuca.Repository\\Repository.cs",
+              "RelativeDocumentMoniker": "Autokuca.Repository\\Repository.cs",
+              "ToolTip": "C:\\Users\\Lucija\\source\\repos\\Autokuca\\Autokuca.Repository\\Repository.cs",
+              "RelativeToolTip": "Autokuca.Repository\\Repository.cs",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAQwEwAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T18:51:04.873Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

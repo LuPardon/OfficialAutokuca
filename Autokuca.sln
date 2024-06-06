@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Autokuca.DAL", "Autokuca.DAL\Autokuca.DAL.csproj", "{DB624A5A-38A5-41F6-9B70-CA72F27FACA3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{040A1EDC-400B-4CA6-B75A-49713B664F88} = {040A1EDC-400B-4CA6-B75A-49713B664F88}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Autokuca.Model", "Autokuca.Model\Autokuca.Model.csproj", "{040A1EDC-400B-4CA6-B75A-49713B664F88}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Autokuca.Repository", "Autokuca.Repository\Autokuca.Repository.csproj", "{BBD8BBAC-3D17-4BD1-995E-A0A15D46C254}"
+	ProjectSection(ProjectDependencies) = postProject
+		{040A1EDC-400B-4CA6-B75A-49713B664F88} = {040A1EDC-400B-4CA6-B75A-49713B664F88}
+		{DB624A5A-38A5-41F6-9B70-CA72F27FACA3} = {DB624A5A-38A5-41F6-9B70-CA72F27FACA3}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Autokuca.Service", "Autokuca.Service\Autokuca.Service.csproj", "{923ED5F5-657A-47DE-92D3-8F75E7065B19}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BBD8BBAC-3D17-4BD1-995E-A0A15D46C254} = {BBD8BBAC-3D17-4BD1-995E-A0A15D46C254}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Autokuca.WebAPI", "Autokuca.WebAPI\Autokuca.WebAPI.csproj", "{76E182CD-B819-4863-90D8-A37AB37C8C30}"
+	ProjectSection(ProjectDependencies) = postProject
+		{923ED5F5-657A-47DE-92D3-8F75E7065B19} = {923ED5F5-657A-47DE-92D3-8F75E7065B19}
+		{DB624A5A-38A5-41F6-9B70-CA72F27FACA3} = {DB624A5A-38A5-41F6-9B70-CA72F27FACA3}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DB624A5A-38A5-41F6-9B70-CA72F27FACA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB624A5A-38A5-41F6-9B70-CA72F27FACA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB624A5A-38A5-41F6-9B70-CA72F27FACA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB624A5A-38A5-41F6-9B70-CA72F27FACA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{040A1EDC-400B-4CA6-B75A-49713B664F88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{040A1EDC-400B-4CA6-B75A-49713B664F88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{040A1EDC-400B-4CA6-B75A-49713B664F88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{040A1EDC-400B-4CA6-B75A-49713B664F88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBD8BBAC-3D17-4BD1-995E-A0A15D46C254}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBD8BBAC-3D17-4BD1-995E-A0A15D46C254}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBD8BBAC-3D17-4BD1-995E-A0A15D46C254}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBD8BBAC-3D17-4BD1-995E-A0A15D46C254}.Release|Any CPU.Build.0 = Release|Any CPU
+		{923ED5F5-657A-47DE-92D3-8F75E7065B19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{923ED5F5-657A-47DE-92D3-8F75E7065B19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{923ED5F5-657A-47DE-92D3-8F75E7065B19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{923ED5F5-657A-47DE-92D3-8F75E7065B19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76E182CD-B819-4863-90D8-A37AB37C8C30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76E182CD-B819-4863-90D8-A37AB37C8C30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76E182CD-B819-4863-90D8-A37AB37C8C30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76E182CD-B819-4863-90D8-A37AB37C8C30}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F54FA934-AE20-40D8-9674-03E22E398657}
+	EndGlobalSection
+EndGlobal
