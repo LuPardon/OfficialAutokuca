@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Autokuca.WebAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+73e839ffdd553a0cc5d6ae530dd3f0e710e6ed5f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3a327c591c42872691aabbeaa09f3c89789891a6")]
 [assembly: System.Reflection.AssemblyProductAttribute("Autokuca.WebAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Autokuca.WebAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

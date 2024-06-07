@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Autokuca.Model;
+using Microsoft.AspNetCore.Identity;
 
 
 namespace Autokuca.DAL;
@@ -40,6 +41,17 @@ public partial class AutoKucaContext : IdentityDbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+
+        modelBuilder.Entity<IdentityUserLogin<string>>()
+            .HasNoKey();
+
+        modelBuilder.Entity<IdentityUserRole<string>>()
+           .HasNoKey();
+
+        modelBuilder.Entity<IdentityUserToken<string>>()
+       .HasNoKey();
+
+
         modelBuilder.Entity<AspNetRole>(entity =>
         {
             entity.HasIndex(e => e.NormalizedName, "RoleNameIndex")
