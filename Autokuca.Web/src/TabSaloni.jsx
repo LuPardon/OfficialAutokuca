@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from "react";
+import { TreeTable } from "primereact/treetable";
+import { Column } from "primereact/column";
 
 // Kreiraj komponentu TabSaloni
 const TabSaloni = () => {
   // Definiši state za podatke, učitavanje i greške
-  const [saloni, setSaloni] = useState([]);
+  const [saloni, setSaloni] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  // const [nodes, setNodes] = useState([]);
 
   // Koristi useEffect za dohvaćanje podataka prilikom montiranja komponente
   useEffect(() => {
@@ -25,8 +28,15 @@ const TabSaloni = () => {
         }
         const result = await response.json();
         console.log("Success:", result);
-        // await response.json();
-        setSaloni(result); // Postavi podatke
+
+        // Transform data to hierarchical structure expected by TreeTable
+        const formattedResult = result.map((salon, index) => ({
+          key: salon.idSalona || index,
+          data: salon, // Ensure data is  nested
+        }));
+
+        setSaloni(formattedResult);
+        // setSaloni(result); // Postavi podatke
       } catch (error) {
         setError(error); // Postavi grešku
       } finally {
@@ -42,24 +52,32 @@ const TabSaloni = () => {
   if (error) return <p>Error: {error.message}</p>;
 
   return (
-    <div>
-      <h1>Saloni</h1>
-      <table className="table">
-        <thead>
-          <tr>
-            <td>Rbr.</td>
-            <td>Naziv</td>
-          </tr>
-        </thead>
-        <tbody>
-          {saloni.map((salon, index) => (
-            <tr key={salon.idSalona}>
-              <td>{index + 1}</td>
-              <td>{salon.nazivSalona}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+    <div className="card">
+      <TreeTable
+        value={saloni}
+        tableStyle={{ minWidth: "50rem" }}
+        stateKey={"tree-table-state-demo-session"}
+        stateStorage={"session"}
+        paginator
+        rows={5}
+        rowsPerPageOptions={[5, 10, 25]}
+      >
+        <Column
+          field="idSalona"
+          header="ID salona"
+          expander
+          filter
+          filterPlaceholder="Filter by ID"
+        ></Column>
+
+        <Column
+          field="nazivSalona"
+          header="Naziv salona"
+          expander
+          filter
+          filterPlaceholder="Filter by name"
+        ></Column>
+      </TreeTable>
     </div>
   );
 };

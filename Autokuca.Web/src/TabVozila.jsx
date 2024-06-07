@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from "react";
+import { TreeTable } from "primereact/treetable";
+import { Column } from "primereact/column";
 
-// Kreiraj komponentu TabVozila
+// Kreiraj komponentu TabSaloni
 const TabVozila = () => {
   // Definiši state za podatke, učitavanje i greške
-  const [vozila, setVozila] = useState([]);
+  const [vozila, setVozila] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  // const [nodes, setNodes] = useState([]);
 
   // Koristi useEffect za dohvaćanje podataka prilikom montiranja komponente
   useEffect(() => {
@@ -25,8 +28,15 @@ const TabVozila = () => {
         }
         const result = await response.json();
         console.log("Success:", result);
-        // await response.json();
-        setVozila(result); // Postavi podatke
+
+        // Transform data to hierarchical structure expected by TreeTable
+        const formattedResult = result.map((vozilo, index) => ({
+          key: vozilo.idVozilo || index,
+          data: vozilo, // Ensure data is  nested
+        }));
+
+        setVozila(formattedResult);
+        // setVozila(result); // Postavi podatke
       } catch (error) {
         setError(error); // Postavi grešku
       } finally {
@@ -42,34 +52,72 @@ const TabVozila = () => {
   if (error) return <p>Error: {error.message}</p>;
 
   return (
-    <div>
-      <h1>Vozila</h1>
-      <table className="table">
-        <thead>
-          <tr>
-            <td>Rbr.</td>
-            <td>Registracija</td>
-            <td>Tip vozila</td>
-            <td>Proizvođač</td>
-            <td>Godina proizvodnje</td>
-            <td>Oznaka</td>
-            <td>Snaga motora</td>
-          </tr>
-        </thead>
-        <tbody>
-          {vozila.map((vozilo, index) => (
-            <tr key={vozilo.idVozilo}>
-              <td>{index + 1}</td>
-              <td>{vozilo.sifraVozila}</td>
-              <td>{vozilo.tipVozila}</td>
-              <td>{vozilo.proizvodac}</td>
-              <td>{vozilo.godProizvodnje}</td>
-              <td>{vozilo.oznakaVozila}</td>
-              <td>{vozilo.snagaMotora}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+    <div className="card">
+      <TreeTable
+        value={vozila}
+        tableStyle={{ minWidth: "50rem" }}
+        stateKey={"tree-table-state-demo-session"}
+        stateStorage={"session"}
+        paginator
+        rows={5}
+        rowsPerPageOptions={[5, 10, 25]}
+      >
+        <Column
+          field="idVozilo"
+          header="ID vozila"
+          expander
+          filter
+          filterPlaceholder="Filter  ID"
+        ></Column>
+
+        <Column
+          field="sifraVozila"
+          header="Šifra"
+          expander
+          filter
+          filterPlaceholder="Šifra"
+        ></Column>
+
+        <Column
+          field="tipVozila"
+          header="Tip vozila"
+          expander
+          filter
+          filterPlaceholder="Tip vozila"
+        ></Column>
+
+        <Column
+          field="proizvodac"
+          header="Proizvođač"
+          expander
+          filter
+          filterPlaceholder="Proizvođač"
+        ></Column>
+
+        <Column
+          field="godProizvodnje"
+          header="Godina proizvodnje"
+          expander
+          filter
+          filterPlaceholder="Godina proizvodnje"
+        ></Column>
+
+        <Column
+          field="oznakaVozila"
+          header="Registracija"
+          expander
+          filter
+          filterPlaceholder="Registracija"
+        ></Column>
+
+        <Column
+          field="snagaMotora"
+          header="Snaga motora"
+          expander
+          filter
+          filterPlaceholder="Snaga motora"
+        ></Column>
+      </TreeTable>
     </div>
   );
 };
