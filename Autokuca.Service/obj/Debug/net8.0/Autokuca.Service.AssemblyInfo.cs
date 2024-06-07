@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Autokuca.Service")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cf0df5634d5b79b6be40b5e2fb7331ad1cae03b3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3a327c591c42872691aabbeaa09f3c89789891a6")]
 [assembly: System.Reflection.AssemblyProductAttribute("Autokuca.Service")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Autokuca.Service")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
