@@ -55,12 +55,15 @@ const TabSaloni = () => {
     <div className="card">
       <TreeTable
         value={saloni}
-        tableStyle={{ minWidth: "50rem" }}
+        tableStyle={{ minWidth: "80rem" }}
         stateKey={"tree-table-state-demo-session"}
         stateStorage={"session"}
         paginator
         rows={5}
         rowsPerPageOptions={[5, 10, 25]}
+        resizableColumns
+        showGridlines
+        columnResizeMode="expand"
       >
         <Column
           field="idSalona"
@@ -68,14 +71,15 @@ const TabSaloni = () => {
           expander
           filter
           filterPlaceholder="Filter by ID"
+          sortable
         ></Column>
 
         <Column
           field="nazivSalona"
           header="Naziv salona"
-          expander
           filter
           filterPlaceholder="Filter by name"
+          sortable
         ></Column>
       </TreeTable>
     </div>

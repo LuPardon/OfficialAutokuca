@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 
 namespace Autokuca.Model;
+
 public partial class AspNetUserLogin
 {
     public string LoginProvider { get; set; } = null!;

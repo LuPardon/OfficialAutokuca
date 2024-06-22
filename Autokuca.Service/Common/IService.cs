@@ -15,13 +15,16 @@ namespace Autokuca.Service.Common
 
         Task<IEnumerable<Vozilo>> DohvatiVozila(
             int? id_salona,
-            string? sifra_vozila,
             string? tip_vozila,
             string? proizvodac,
             string? oznaka_vozila,
             int? god_proizvodnje,
-            string? snaga_motora
-            );
+            string? snaga_motora,
+        string? model_vozila,
+        decimal? cijena,
+        string? vrsta_vozila,
+        string? mjenjac,
+        string? gorivo);
         Task<Vozilo> DohvatiVozilo(int id);
 
         Task<bool> AzurirajVozilo(Vozilo Vozilo);

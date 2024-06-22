@@ -15,26 +15,36 @@ namespace Autokuca.WebAPI.Controllers
         }
         [HttpGet("")]
         public async Task<IActionResult> DohvatiVozila(
-                int? id_salona,
-            string? sifra_vozila,
+            int? id_salona,
             string? tip_vozila,
             string? proizvodac,
             string? oznaka_vozila,
             int? god_proizvodnje,
-            string? snaga_motora)
+            string? snaga_motora,
+            string? model_vozila,
+            decimal? cijena,
+            string? vrsta_vozila,
+            string? mjenjac,
+            string? gorivo)
         {
             try
             {
                 var result = await _service.DohvatiVozila(
                     id_salona: id_salona,
-                    sifra_vozila: sifra_vozila,
                     tip_vozila: tip_vozila,
                     proizvodac: proizvodac,
                     oznaka_vozila: oznaka_vozila,
                     god_proizvodnje: god_proizvodnje,
-                    snaga_motora: snaga_motora);
+                    snaga_motora: snaga_motora,
+                    model_vozila: model_vozila,
+                    cijena: cijena,
+                    vrsta_vozila: vrsta_vozila,
+                    mjenjac: mjenjac,
+                    gorivo: gorivo);
+
                 return (result != null) ? Ok(result) : NotFound();
             }
+            
             catch (Exception e)
             {
                 return BadRequest(e.Message);

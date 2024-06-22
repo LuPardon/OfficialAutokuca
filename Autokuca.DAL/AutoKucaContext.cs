@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore;
 using Autokuca.Model;
 using Microsoft.AspNetCore.Identity;
-
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 
 namespace Autokuca.DAL;
 
@@ -42,7 +41,7 @@ public partial class AutoKucaContext : IdentityDbContext
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
 
-        modelBuilder.Entity<IdentityUserLogin<string>>()
+         modelBuilder.Entity<IdentityUserLogin<string>>()
             .HasNoKey();
 
         modelBuilder.Entity<IdentityUserRole<string>>()
@@ -50,7 +49,6 @@ public partial class AutoKucaContext : IdentityDbContext
 
         modelBuilder.Entity<IdentityUserToken<string>>()
        .HasNoKey();
-
 
         modelBuilder.Entity<AspNetRole>(entity =>
         {
@@ -137,23 +135,36 @@ public partial class AutoKucaContext : IdentityDbContext
             entity.ToTable("vozilo");
 
             entity.Property(e => e.IdVozilo).HasColumnName("id_vozilo");
+            entity.Property(e => e.Cijena)
+                .HasColumnType("decimal(18, 0)")
+                .HasColumnName("cijena");
             entity.Property(e => e.GodProizvodnje).HasColumnName("god_proizvodnje");
+            entity.Property(e => e.Gorivo)
+                .HasColumnType("text")
+                .HasColumnName("gorivo");
             entity.Property(e => e.IdSalona).HasColumnName("id_salona");
+            entity.Property(e => e.Mjenjac)
+                .HasColumnType("text")
+                .HasColumnName("mjenjac");
+            entity.Property(e => e.ModelVozila)
+                .HasColumnType("text")
+                .HasColumnName("model_vozila");
             entity.Property(e => e.OznakaVozila)
-                .HasMaxLength(10)
+                .HasMaxLength(17)
+                .IsUnicode(false)
                 .HasColumnName("oznaka_vozila");
             entity.Property(e => e.Proizvodac)
                 .HasMaxLength(50)
                 .HasColumnName("proizvodac");
-            entity.Property(e => e.SifraVozila)
-                .HasMaxLength(50)
-                .HasColumnName("sifra_vozila");
             entity.Property(e => e.SnagaMotora)
                 .HasMaxLength(15)
                 .HasColumnName("snaga_motora");
             entity.Property(e => e.TipVozila)
                 .HasMaxLength(50)
                 .HasColumnName("tip_vozila");
+            entity.Property(e => e.VrstaVozila)
+                .HasColumnType("text")
+                .HasColumnName("vrsta_vozila");
 
             entity.HasOne(d => d.IdSalonaNavigation).WithMany(p => p.Vozilos)
                 .HasForeignKey(d => d.IdSalona)

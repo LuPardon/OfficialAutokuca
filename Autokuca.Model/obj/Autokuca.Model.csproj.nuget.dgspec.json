@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lucija\\source\\repos\\Autokuca\\Autokuca.Model\\Autokuca.Model.csproj": {}
+    "C:\\Users\\Lucija\\source\\repos\\GitHubAutokuca\\OfficialAutokuca\\Autokuca.Model\\Autokuca.Model.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lucija\\source\\repos\\Autokuca\\Autokuca.Model\\Autokuca.Model.csproj": {
+    "C:\\Users\\Lucija\\source\\repos\\GitHubAutokuca\\OfficialAutokuca\\Autokuca.Model\\Autokuca.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lucija\\source\\repos\\Autokuca\\Autokuca.Model\\Autokuca.Model.csproj",
+        "projectUniqueName": "C:\\Users\\Lucija\\source\\repos\\GitHubAutokuca\\OfficialAutokuca\\Autokuca.Model\\Autokuca.Model.csproj",
         "projectName": "Autokuca.Model",
-        "projectPath": "C:\\Users\\Lucija\\source\\repos\\Autokuca\\Autokuca.Model\\Autokuca.Model.csproj",
+        "projectPath": "C:\\Users\\Lucija\\source\\repos\\GitHubAutokuca\\OfficialAutokuca\\Autokuca.Model\\Autokuca.Model.csproj",
         "packagesPath": "C:\\Users\\Lucija\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lucija\\source\\repos\\Autokuca\\Autokuca.Model\\obj\\",
+        "outputPath": "C:\\Users\\Lucija\\source\\repos\\GitHubAutokuca\\OfficialAutokuca\\Autokuca.Model\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Lucija\\AppData\\Roaming\\NuGet\\NuGet.Config",

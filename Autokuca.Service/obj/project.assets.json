@@ -4345,11 +4345,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Lucija\\source\\repos\\Autokuca\\Autokuca.Service\\Autokuca.Service.csproj",
+      "projectUniqueName": "C:\\Users\\Lucija\\source\\repos\\GitHubAutokuca\\OfficialAutokuca\\Autokuca.Service\\Autokuca.Service.csproj",
       "projectName": "Autokuca.Service",
-      "projectPath": "C:\\Users\\Lucija\\source\\repos\\Autokuca\\Autokuca.Service\\Autokuca.Service.csproj",
+      "projectPath": "C:\\Users\\Lucija\\source\\repos\\GitHubAutokuca\\OfficialAutokuca\\Autokuca.Service\\Autokuca.Service.csproj",
       "packagesPath": "C:\\Users\\Lucija\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Lucija\\source\\repos\\Autokuca\\Autokuca.Service\\obj\\",
+      "outputPath": "C:\\Users\\Lucija\\source\\repos\\GitHubAutokuca\\OfficialAutokuca\\Autokuca.Service\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Lucija\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4367,11 +4367,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Lucija\\source\\repos\\Autokuca\\Autokuca.Model\\Autokuca.Model.csproj": {
-              "projectPath": "C:\\Users\\Lucija\\source\\repos\\Autokuca\\Autokuca.Model\\Autokuca.Model.csproj"
+            "C:\\Users\\Lucija\\source\\repos\\GitHubAutokuca\\OfficialAutokuca\\Autokuca.Model\\Autokuca.Model.csproj": {
+              "projectPath": "C:\\Users\\Lucija\\source\\repos\\GitHubAutokuca\\OfficialAutokuca\\Autokuca.Model\\Autokuca.Model.csproj"
             },
-            "C:\\Users\\Lucija\\source\\repos\\Autokuca\\Autokuca.Repository\\Autokuca.Repository.csproj": {
-              "projectPath": "C:\\Users\\Lucija\\source\\repos\\Autokuca\\Autokuca.Repository\\Autokuca.Repository.csproj"
+            "C:\\Users\\Lucija\\source\\repos\\GitHubAutokuca\\OfficialAutokuca\\Autokuca.Repository\\Autokuca.Repository.csproj": {
+              "projectPath": "C:\\Users\\Lucija\\source\\repos\\GitHubAutokuca\\OfficialAutokuca\\Autokuca.Repository\\Autokuca.Repository.csproj"
             }
           }
         }

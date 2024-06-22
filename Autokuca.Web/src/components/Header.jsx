@@ -3,7 +3,7 @@ import { Menubar } from "primereact/menubar";
 import { InputText } from "primereact/inputtext";
 import { Badge } from "primereact/badge";
 import { Avatar } from "primereact/avatar";
-import img from "./assets/carlogo.avif";
+import img from "../assets/carlogo.avif";
 
 export default function Header() {
   const itemRenderer = (item) => (
@@ -22,15 +22,16 @@ export default function Header() {
     {
       label: "Početna",
       icon: "pi pi-home",
+      url: "/pocetna",
     },
     {
       label: "Saloni",
-      url: "saloni",
+      url: "/saloni",
       icon: "pi pi-star",
     },
     {
       label: "Vozila",
-      url: "vozila",
+      url: "/vozila",
       icon: "pi pi-car",
       //#region
       //   items: [
@@ -80,6 +81,11 @@ export default function Header() {
       label: "Kontakt",
       icon: "pi pi-envelope",
       template: itemRenderer,
+    },
+    {
+      label: "Sva vozila",
+      url: "/sva_vozila",
+      icon: "pi pi-star",
     },
   ];
 

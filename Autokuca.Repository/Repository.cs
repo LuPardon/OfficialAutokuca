@@ -51,7 +51,7 @@ public class Repository : IRepository
             }
 
             existing.IdSalona = Vozilo.IdSalona;
-            existing.SifraVozila = Vozilo.SifraVozila;
+            // existing.SifraVozila = Vozilo.SifraVozila;
             existing.TipVozila = Vozilo.TipVozila;
             existing.Proizvodac = Vozilo.Proizvodac;
             existing.OznakaVozila = Vozilo.OznakaVozila;
@@ -84,12 +84,17 @@ public class Repository : IRepository
 
     public async Task<IEnumerable<Vozilo>> DohvatiVozila(
         int? id_salona,
-        string? sifra_vozila,
+        // string? sifra_vozila,
         string? tip_vozila,
         string? proizvodac,
         string? oznaka_vozila,
         int? god_proizvodnje,
-        string? snaga_motora)
+        string? snaga_motora,
+        string? model_vozila,
+        decimal? cijena,
+        string? vrsta_vozila,
+        string? mjenjac,
+        string? gorivo)
     {
         try
         {
@@ -100,11 +105,44 @@ public class Repository : IRepository
                 query = query.Where(v => v.IdSalona == id_salona);
             }
 
-            if (!string.IsNullOrEmpty(sifra_vozila))
+            if (!string.IsNullOrEmpty(model_vozila))
             {
                 query = query.Where(s =>
-                s.SifraVozila != null &&
-                s.SifraVozila.Contains(sifra_vozila));
+                s.ModelVozila != null &&
+                s.ModelVozila.Contains(model_vozila));
+            }
+
+            if (!string.IsNullOrEmpty(snaga_motora))
+            {
+                query = query.Where(s =>
+                s.SnagaMotora != null &&
+                s.SnagaMotora.Contains(snaga_motora));
+            }
+
+              if (!string.IsNullOrEmpty(vrsta_vozila))
+            {
+                query = query.Where(s =>
+                s.VrstaVozila != null &&
+                s.VrstaVozila.Contains(vrsta_vozila));
+            }
+
+              if (!string.IsNullOrEmpty(mjenjac))
+            {
+                query = query.Where(s =>
+                s.Mjenjac != null &&
+                s.Mjenjac.Contains(mjenjac));
+            } 
+            
+             if (!string.IsNullOrEmpty(gorivo))
+            {
+                query = query.Where(s =>
+                s.Gorivo != null &&
+                s.Gorivo.Contains(gorivo));
+            }
+
+            if (cijena.HasValue)
+            {
+                query = query.Where(v => v.Cijena == cijena);
             }
 
             if (!string.IsNullOrEmpty(tip_vozila))

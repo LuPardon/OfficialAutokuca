@@ -37,22 +37,30 @@ public class Service : IService
 
     public async Task<IEnumerable<Vozilo>> DohvatiVozila(
         int? id_salona,
-        string? sifra_vozila,
         string? tip_vozila,
         string? proizvodac,
         string? oznaka_vozila,
         int? god_proizvodnje,
-        string? snaga_motora)
+        string? snaga_motora,
+        string? model_vozila,
+        decimal? cijena,
+        string? vrsta_vozila,
+        string? mjenjac,
+        string? gorivo)
+        
     {
         return await _repository.DohvatiVozila(
             id_salona: id_salona,
-            sifra_vozila: sifra_vozila,
             tip_vozila: tip_vozila,
             proizvodac: proizvodac,
             oznaka_vozila: oznaka_vozila,
             god_proizvodnje: god_proizvodnje,
-            snaga_motora: snaga_motora
-            );
+            snaga_motora: snaga_motora,
+            model_vozila: model_vozila,
+            cijena: cijena,
+            vrsta_vozila: vrsta_vozila,
+            mjenjac: mjenjac,
+            gorivo: gorivo);
     }
 
     public async Task<Vozilo> DohvatiVozilo(int id)

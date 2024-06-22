@@ -4305,11 +4305,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Lucija\\source\\repos\\Autokuca\\Autokuca.DAL\\Autokuca.DAL.csproj",
+      "projectUniqueName": "C:\\Users\\Lucija\\source\\repos\\GitHubAutokuca\\OfficialAutokuca\\Autokuca.DAL\\Autokuca.DAL.csproj",
       "projectName": "Autokuca.DAL",
-      "projectPath": "C:\\Users\\Lucija\\source\\repos\\Autokuca\\Autokuca.DAL\\Autokuca.DAL.csproj",
+      "projectPath": "C:\\Users\\Lucija\\source\\repos\\GitHubAutokuca\\OfficialAutokuca\\Autokuca.DAL\\Autokuca.DAL.csproj",
       "packagesPath": "C:\\Users\\Lucija\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Lucija\\source\\repos\\Autokuca\\Autokuca.DAL\\obj\\",
+      "outputPath": "C:\\Users\\Lucija\\source\\repos\\GitHubAutokuca\\OfficialAutokuca\\Autokuca.DAL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Lucija\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4327,8 +4327,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Lucija\\source\\repos\\Autokuca\\Autokuca.Model\\Autokuca.Model.csproj": {
-              "projectPath": "C:\\Users\\Lucija\\source\\repos\\Autokuca\\Autokuca.Model\\Autokuca.Model.csproj"
+            "C:\\Users\\Lucija\\source\\repos\\GitHubAutokuca\\OfficialAutokuca\\Autokuca.Model\\Autokuca.Model.csproj": {
+              "projectPath": "C:\\Users\\Lucija\\source\\repos\\GitHubAutokuca\\OfficialAutokuca\\Autokuca.Model\\Autokuca.Model.csproj"
             }
           }
         }

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { TreeTable } from "primereact/treetable";
 import { Column } from "primereact/column";
 
-// Kreiraj komponentu TabSaloni
+// Kreiraj komponentu TabVozila
 const TabVozila = () => {
   // Definiši state za podatke, učitavanje i greške
   const [vozila, setVozila] = useState(null);
@@ -55,67 +55,100 @@ const TabVozila = () => {
     <div className="card">
       <TreeTable
         value={vozila}
-        tableStyle={{ minWidth: "50rem" }}
+        tableStyle={{ minWidth: "50rem", width: "auto" }}
         stateKey={"tree-table-state-demo-session"}
         stateStorage={"session"}
         paginator
         rows={5}
         rowsPerPageOptions={[5, 10, 25]}
+        resizableColumns
+        showGridlines
+        columnResizeMode="expand"
       >
         <Column
           field="idVozilo"
           header="ID vozila"
-          expander
           filter
           filterPlaceholder="Filter  ID"
-        ></Column>
-
-        <Column
-          field="sifraVozila"
-          header="Šifra"
           expander
-          filter
-          filterPlaceholder="Šifra"
+          sortable
         ></Column>
 
         <Column
           field="tipVozila"
           header="Tip vozila"
-          expander
           filter
+          sortable
           filterPlaceholder="Tip vozila"
         ></Column>
 
         <Column
           field="proizvodac"
           header="Proizvođač"
-          expander
+          sortable
           filter
           filterPlaceholder="Proizvođač"
         ></Column>
 
         <Column
           field="godProizvodnje"
+          sortable
           header="Godina proizvodnje"
-          expander
           filter
           filterPlaceholder="Godina proizvodnje"
         ></Column>
 
         <Column
           field="oznakaVozila"
-          header="Registracija"
-          expander
+          header="VIN"
           filter
-          filterPlaceholder="Registracija"
+          sortable
+          filterPlaceholder="VIN"
         ></Column>
 
         <Column
           field="snagaMotora"
           header="Snaga motora"
-          expander
           filter
+          sortable
           filterPlaceholder="Snaga motora"
+        ></Column>
+
+        <Column
+          field="modelVozila"
+          header="Model"
+          filter
+          sortable
+          filterPlaceholder="Model"
+        ></Column>
+
+        <Column
+          field="cijena"
+          header="Cijena (euro)"
+          sortable
+          filter
+          filterPlaceholder="Cijena"
+        ></Column>
+        <Column
+          field="vrstaVozila"
+          header="Vrsta vozila"
+          filter
+          sortable
+          filterPlaceholder="Vrsta vozila"
+        ></Column>
+        <Column
+          field="mjenjac"
+          header="Mjenjač"
+          sortable
+          filter
+          filterPlaceholder="Mjenjač"
+        ></Column>
+        <Column
+          field="gorivo"
+          header="Gorivo"
+          filter
+          sortable
+          filterPlaceholder="Gorivo"
         ></Column>
       </TreeTable>
     </div>
